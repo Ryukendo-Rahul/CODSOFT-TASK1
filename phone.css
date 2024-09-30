@@ -104,13 +104,14 @@
         /* border-radius: 50px; */
         position: relative;
         top: -5vh;
-        font-size: 1rem;
+        font-size: .8rem;
         text-decoration: none;
         margin: 0px 20px;
         padding: 2px 20px;
         font-weight: 400;
         font-family: "Josefin Sans", sans-serif;
         color: blue;
+        text-align: justify;
     }
 
     .categories a:hover {

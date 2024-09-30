@@ -10,7 +10,13 @@
     font-weight: 400;
     font-style: normal;
   } */
-
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    /* font-weight: 3
+    00; */
+    font-style: normal;
+  }
+  
 
 header {
     /* border: 2px solid black; */
@@ -72,7 +78,7 @@ header a:hover {
     font-family: "Anta", sans-serif;
 }
 
-.header_icons{
+.header_icons {
     display: flex;
 }
 
@@ -84,73 +90,128 @@ header a:hover {
 }
 
 .sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid black; */
     height: 40vh;
     width: 100%;
 }
 
 
-.hero_img{
-    
+.hero_img {
+
     position: relative;
     height: 40vh;
-    width: 100%;
-    background-size: 100% 100%;
-    animation: slider 10s infinite linear ;
-  
-}
+    width: 70%;
 
+    background-size: 100% 100%;
+    animation: slider 20s infinite ease-in-out;
+
+}
 
 @keyframes slider {
     0% {
         background-image: url(hero.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    20% {
+        background-image: url(hero3.png);
+        background-size: cover;
+        background-position: center;
     }
 
     25% {
         background-image: url(hero2.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    45% {
+        background-image: url(hero3.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     50% {
-        background-image: url(hero3.jpg);
+        background-image: url(slide1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    75%{
-        background-image: url(hero.png);
-    }
-   100%{
-        background-image: url(slide9.jpg);
-   }
 
+    70% {
+        background-image: url(slide14.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    75% {
+        background-image: url(slide5.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    95% {
+        background-image: url(slide10.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(slide9.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
+
+.slider {
+    background-color: #000;
+    /* or any other color you prefer */
+    animation: slider 10s infinite;
+    /* adjust the animation duration and iteration count as needed */
+}
+
 .sec2 h2 {
     text-align: center;
     font-size: 2rem;
     margin: 2vh 0vw;
-    color: black;
+    color: rgb(193, 20, 20);
     font-weight: 500;
     text-decoration: underline;
-    font-family: "Jost", sans-serif;
-    /* font-family: "Anta", sans-serif; */
+    font-family: "Bebas Neue", sans-serif;    /* font-family: "Anta", sans-serif; */
     /* border: 2px solid black; */
 }
 
 .sec2 {
     align-items: center;
-    background-color:thistle;
-    height: 25vh;
+    background-color: thistle;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+
 
 .categories {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
     height: 12vh;
-    width: 80%;
+    width: 100%;
     margin: 0px 10px;
+    background-color: gainsboro;
     /* border: 2px solid beige; */
 }
 
@@ -158,7 +219,8 @@ header a:hover {
 .categories a {
     /* border: 2px solid black; */
     /* border-radius: 50px; */
-    font-size: 1.4rem;
+    text-align: justify;
+    font-size: 1.2rem;
     text-decoration: none;
     margin: 0px 20px;
     padding: 5px 8px;
@@ -174,8 +236,8 @@ header a:hover {
 
 .sec3 {
     /* border: 2px solid black; */
-    background-color:burlywood;
-    height: 60vh;
+    background-color: burlywood;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -194,7 +256,7 @@ header a:hover {
     padding: 2vw 2vw;
     margin: 0vw 2vw;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     /* align-items: center; */
     flex-wrap: wrap;
 }
@@ -203,14 +265,35 @@ header a:hover {
     /* border: 2px solid black; */
     height: 95vh;
     width: 100%;
-    background-color:cornsilk;
+    background-color: cornsilk;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
 }
-.payment_form{
+.sec4 h1 {
+    position: relative;
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(25vw);
+    }
+    50% {
+        transform: translateX(-25vw);
+    }
+    100% {
+        transform: translateX(25vw);
+    }
+}
+
+.sec4 {
+    overflow: hidden;
+}
+
+.payment_form {
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
@@ -220,23 +303,27 @@ header a:hover {
     font-size: 1.5rem;
 
 }
-.payment_form input{
+
+.payment_form input {
     font-size: 1rem;
     margin: 10px 0px;
 }
-.sec4 img{
-    height: 45vh;
-    width: 20vw;
+
+.sec4 img {
+    height: 38vh;
+    width: 16vw;
     background-size: 100% 100%;
 }
-.sec4 h1{
-   position: relative;
-   top: -6vh;
+
+.sec4 h1 {
+    position: relative;
+    top: -6vh;
     /* text-align: center; */
     font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-.sec4 p{
+.sec4 p {
     font-size: 2rem;
     font-weight: 600;
 
@@ -246,7 +333,7 @@ header a:hover {
     border: 2px solid aquamarine;
     height: 75vh;
     width: 100%;
-    background-color:aquamarine;
+    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,13 +341,14 @@ header a:hover {
 }
 
 
-.sec5 h2{
+.sec5 h2 {
     text-align: center;
     margin-top: 2vh;
     font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-.forms{
+.forms {
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
@@ -268,24 +356,24 @@ header a:hover {
     width: 40vw;
     height: 60vh;
     /* border: 2px solid black; */
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin: 5vh 0vw;
 }
 
-.forms input{
-    font-size: 1.4rem; 
+.forms input {
+    font-size: 1.4rem;
     margin: 1.5vh 0vw;
 
 }
 
-.form_done{
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     gap: 3vw;
+.form_done {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vw;
 }
 
-footer{
+footer {
     /* border: 2px solid black; */
     height: 50vh;
     width: 100%;
@@ -294,21 +382,23 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-   
+
 }
-.f_logo{
+
+.f_logo {
     display: flex;
     align-items: center;
     color: white;
     /* justify-content: space-evenly; */
 }
 
-.f_logo img{
+.f_logo img {
     height: 40px;
     width: 40px;
     margin-right: 20px;
-} 
-.f1{
+}
+
+.f1 {
     /* border: 2px solid yellow; */
     color: white;
     height: 40vh;
@@ -317,40 +407,42 @@ footer{
     justify-content: space-around;
 
 }
-.social{
+
+.social {
     display: flex;
     justify-content: space-between;
 }
 
-.social img{
-height: 40px;
-width: 40px;
+.social img {
+    height: 40px;
+    width: 40px;
 
 
 }
-.f{
+
+.f {
     /* border: 2px solid yellow; */
-    width:20vw;
+    width: 20vw;
     height: 40vh;
     color: white;
 }
-.f p{
+
+.f p {
     text-align: justify;
     margin-top: 2vh;
 }
-.f h2{
+
+.f h2 {
     text-align: center;
 }
 
-.copyright{
+.copyright {
     height: 3vh;
     color: white;
     background-color: rgb(95, 58, 58);
-    
+
 }
 
-.copyright p
-{
+.copyright p {
     text-align: center;
 }
-    
