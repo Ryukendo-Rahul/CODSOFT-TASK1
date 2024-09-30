@@ -17,7 +17,9 @@
     font-style: normal;
   }
   
-
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
 header {
     /* border: 2px solid black; */
     height: 10vh;
@@ -272,6 +274,20 @@ header a:hover {
     flex-direction: column;
 
 }
+
+.sec4 button{
+    padding: 10px;
+    margin: 10px 0px;
+    width: 6rem;
+    background-color:rgb(146, 69, 69);
+    border: none;
+    color: white;
+}
+
+.sec4 button:hover{
+    cursor: pointer;
+    background-color:blueviolet;
+}
 .sec4 h1 {
     position: relative;
     animation: move 10s infinite;
@@ -297,6 +313,8 @@ header a:hover {
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 30vw;
     height: 20vh;
     align-items: center;
@@ -305,13 +323,14 @@ header a:hover {
 }
 
 .payment_form input {
-    font-size: 1rem;
+    font-size:.7rem;
     margin: 10px 0px;
 }
 
 .sec4 img {
-    height: 38vh;
-    width: 16vw;
+    height: 30vh;
+    width: 14vw;
+    margin-top: 3rem;
     background-size: 100% 100%;
 }
 
@@ -361,7 +380,7 @@ header a:hover {
 }
 
 .forms input {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin: 1.5vh 0vw;
 
 }
@@ -371,6 +390,19 @@ header a:hover {
     justify-content: flex-start;
     align-items: center;
     gap: 3vw;
+}
+
+.form_done button{
+    padding: 10px;
+    margin: 10px 0px;
+    width: 6rem;
+    background-color:rgb(146, 69, 69);
+    border: none;
+    color: white;
+}
+
+.form_done button:hover{
+    background-color: blueviolet;
 }
 
 footer {
